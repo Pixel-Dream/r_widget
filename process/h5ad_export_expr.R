@@ -1,9 +1,13 @@
-#' This function is used to convert 
-#' tasks and doesn't support "simplify" and "USE.NAMES" options
+#' This function is used to convert a layer of expression profile in .h5ad object 
+#' to three separate .tsv files: 
+#' <export_name> -> Tsparse matrix, 
+#' <export_name>_gene -> gene index and gene names 
+#' <export_name>_cell -> cell index and cell names
+#'
 #'
 #' @param file_path h5ad file path
 #' @param export_name tsv file name
-#' @param layer_name expression layer in h5ad file to be export
+#' @param layer_name name of the expression layer to be export
 #' @param save_path tsv file path
 #' 
 #' @return NULL
